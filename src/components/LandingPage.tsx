@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LogoLookUpPage from '../LogoLookUpPage';
-import { Navbar } from '/Users/yugapriya/Desktop/react-logoGen/src/components/Navbar'
-import SubmitLogoDetailsPage from '/Users/yugapriya/Desktop/react-logoGen/src/components/SubmitLogoDetailsPage'
+import { Navbar } from './Navbar'
+import SubmitLogoDetailsPage from './SubmitLogoDetailsPage'
 
 
 function LandingPage() {

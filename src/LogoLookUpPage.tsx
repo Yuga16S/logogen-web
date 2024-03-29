@@ -9,7 +9,7 @@ const [domainName, setDomainName] =  useState('');
 const [displayLogo, setDisplayLogo] = useState(false);
 const handleClick = async (domainName: string) => {
   try {
-    const response = await fetch(`http://localhost:8080/api/companyName/${domainName}`, {
+    const response = await fetch(`https://logogen-uwwv.onrender.com/api/companyName/${domainName}`, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',

@@ -12,7 +12,7 @@ const LogoDatabasePage = () => {
     const fetchData = async () => {
         try {
             // Fetch data from your database API, you can use libraries like Axios or fetch
-            const response = await fetch(`http://localhost:8080/api/displayLogoDetails?page=${currentPage}&limit=${itemsPerPage}`);
+            const response = await fetch(`https://logogen-uwwv.onrender.com/api/displayLogoDetails?page=${currentPage}&limit=${itemsPerPage}`);
             const jsonData = await response.json();
             setData(jsonData);
         } catch (error) {

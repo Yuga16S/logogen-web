@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Button from '/Users/yugapriya/Desktop/react-logoGen/src/components/Button';
+import Button from './Button';
 
 const submitLogoDetailsPage = () => {
     const [companyName, setCompanyName] = useState('');
@@ -10,7 +10,7 @@ const submitLogoDetailsPage = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:8080/api/save', { companyName, domain, url });
+            await axios.post('https://logogen-uwwv.onrender.com/api/save', { companyName, domain, url });
             alert('Logo details submitted for approval.');
             // Clear form fields after submission
             setCompanyName('');

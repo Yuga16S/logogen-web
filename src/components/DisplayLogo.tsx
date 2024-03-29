@@ -26,7 +26,7 @@ const handleCopy = async () => {
 useEffect(() => {
     const innerFunction = async (domainName: string) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/logoUrl/${domainName}`, {
+            const response = await fetch(`https://logogen-uwwv.onrender.com/api/logoUrl/${domainName}`, {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
