@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import Button from "./Button";
 import '../index.css';
-import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
+import config from '../../config.json';
 
 interface Props {
     domainName: string;

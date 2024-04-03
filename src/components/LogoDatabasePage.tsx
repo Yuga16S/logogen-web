@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
+import config from '../../config.json';
 
 
 const LogoDatabasePage = () => {

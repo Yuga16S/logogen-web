@@ -1,7 +1,7 @@
 import DisplayLogo from "./components/DisplayLogo";
 import Button from "./components/Button";
 import { useState } from "react";
-import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
+import config from '../config.json';
 
 
 function App() {

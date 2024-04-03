@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Button from './Button';
-import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
+import config from '../../config.json';
 
 
 const submitLogoDetailsPage = () => {
