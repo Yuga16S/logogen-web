@@ -1,6 +1,7 @@
 import DisplayLogo from "./components/DisplayLogo";
 import Button from "./components/Button";
 import { useState } from "react";
+import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
 
 
 function App() {
@@ -9,7 +10,7 @@ const [domainName, setDomainName] =  useState('');
 const [displayLogo, setDisplayLogo] = useState(false);
 const handleClick = async (domainName: string) => {
   try {
-    const response = await fetch(`https://logogen-uwwv.onrender.com/api/companyName/${domainName}`, {
+    const response = await fetch(`${config.serverUrl}/api/companyName/${domainName}`, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
+
 
 const LogoDatabasePage = () => {
     const [data, setData] = useState([]);
@@ -12,7 +14,7 @@ const LogoDatabasePage = () => {
     const fetchData = async () => {
         try {
             // Fetch data from your database API, you can use libraries like Axios or fetch
-            const response = await fetch(`https://logogen-uwwv.onrender.com/api/displayLogoDetails?page=${currentPage}&limit=${itemsPerPage}`);
+            const response = await fetch(`${config.serverUrl}/api/displayLogoDetails?page=${currentPage}&limit=${itemsPerPage}`);
             const jsonData = await response.json();
             setData(jsonData);
         } catch (error) {

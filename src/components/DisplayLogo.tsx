@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import Button from "./Button";
 import '../index.css';
+import config from '/Users/yugapriya/Documents/bdec-projects/logogen-web/config.json';
 
 interface Props {
     domainName: string;
@@ -26,7 +27,7 @@ const handleCopy = async () => {
 useEffect(() => {
     const innerFunction = async (domainName: string) => {
         try {
-            const response = await fetch(`https://logogen-uwwv.onrender.com/api/logoUrl/${domainName}`, {
+            const response = await fetch(`${config.serverUrl}/api/logoUrl/${domainName}`, {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
