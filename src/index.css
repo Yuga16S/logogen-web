@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 nav {
-    background-color: rgba(15, 239, 247, 0.295); 
+    background-color: rgb(0, 0, 0); 
     padding: 16px 32px;
     color: rgb(255, 255, 255);
     
@@ -27,7 +27,7 @@ img {
 
     width: 100vw; /* Make the container span the entire viewport width */
     height: 100vh; /* Make the container span the entire viewport height */
-    background-image: url('./images/bg.jpg'); /* Replace with the path to your image */
+    background-image: url('./images/marble.jpg'); /* Replace with the path to your image */
     background-size: cover;
     padding: 0px;
 }

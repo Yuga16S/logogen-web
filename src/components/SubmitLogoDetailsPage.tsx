@@ -12,7 +12,7 @@ const submitLogoDetailsPage = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         try {
-            await axios.post('${config.serverUrl}/api/save', { companyName, domain, url });
+            await axios.post(`${config.serverUrl}/api/save`, { companyName, domain, url });
             alert('Logo details submitted for approval.');
             // Clear form fields after submission
             setCompanyName('');

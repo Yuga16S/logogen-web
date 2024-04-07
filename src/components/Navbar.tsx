@@ -19,7 +19,9 @@ export const Navbar = () => {
         <nav>
             <img src={ logo } alt="Logo"/>
             <NavLink style={ navLinkStyles } to='/LogoLookUpPage'>Logo Lookup</NavLink>
-            <NavLink style={ navLinkStyles } to='/SubmitLogoDetailsPage'>Save Logo Details</NavLink>
+            <NavLink style={ navLinkStyles } to='/SubmitFeedback'>Submit Feedback</NavLink>
+            <NavLink style={ navLinkStyles } to='/DocumentatioDetails'>Check Documentation</NavLink>
+            <NavLink style={ navLinkStyles } to='/AboutUs'>About</NavLink>
         </nav>
     )
 }
