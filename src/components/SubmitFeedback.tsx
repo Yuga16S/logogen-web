@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Button from './Button';
 import config from '../../config.json';
-import { Link } from 'react-router-dom';
-import LogoLookUpPage from '../LogoLookUpPage';
+import { NavLink } from 'react-router-dom';
+
 
 export const SubmitFeedback = () => {
     const [feedbackText, setFeedbackText] = useState('');
@@ -40,7 +39,7 @@ export const SubmitFeedback = () => {
         <>
         {!thanksState ? (
             <div className="container" style={{ maxWidth: '400px', maxHeight: '400px', margin: '50px auto 100px auto' }}>
-                <div style={{ padding: '20px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
+                <div style={{ padding: '20px', borderRadius: '8px'}}>
                     <h1 style={{ textAlign: 'center', color: 'black' }}>Submit Feedback</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="d-flex justify-content-center mt-5 mb-3">
@@ -74,10 +73,11 @@ export const SubmitFeedback = () => {
                         <tbody>
                             <tr>
                                 <td className="d-flex justify-content-center mt-5 mb-1">
-                                    <a href="../LogoLookUpPage" className="btn btn-danger">Home</a>
+
+                                    <NavLink className="btn btn-danger" to='/LogoLookUpPage'>Home</NavLink>  
                                 </td>
                                 <td className="d-flex justify-content-center mt-5 mb-1">
-                                    <a href="/SubmitFeedback" className="btn btn-danger">Submit another feedback</a>
+                                   <NavLink className="btn btn-danger" to='/SubmitFeedback'  onClick={() => setThanksState(false)} >Submit Feedback</NavLink>
                                 </td>
                             </tr>
                         </tbody>

@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import LogoLookUpPage from '../LogoLookUpPage';
 import { Navbar } from './Navbar';
 import SubmitFeedback from './SubmitFeedback';
